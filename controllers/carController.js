@@ -46,7 +46,7 @@ export const updateCar = async (req, res) => {
       res.status(404).json({ message: "Car not found" });
     }
 
-    const updatedCar = await Cars.save();
+    const updatedCar = await car.save();
 
     if (updatedCar) {
       res.status(201).json(updatedCar);
