@@ -1,29 +1,20 @@
 import mongoose from "mongoose";
 
-const userSchema = mongoose.Schema({
+const carSchema = mongoose.Schema({
   name: {
     type: String,
     required: true,
   },
-  email: {
+  image: {
     type: String,
     required: true,
   },
-  password: {
+  price: {
     type: String,
     required: true,
-  },
-  phone: {
-    type: Number,
-    required: true,
-  },
-  isAdmin: {
-    type: Boolean,
-    required: true,
-    default: false,
   },
 });
 
-const Users = mongoose.model("users", userSchema);
+const Cars = mongoose.model("cars", carSchema);
 
-export default Users;
+export default Cars;
