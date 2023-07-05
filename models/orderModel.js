@@ -13,6 +13,7 @@ const orderSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  
 });
 
 const Order = mongoose.model("orders", orderSchema);
